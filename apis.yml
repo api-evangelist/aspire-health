@@ -1,8 +1,26 @@
 aid: aspire-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aspire-health.png
 name: Aspire Health *
-description: 'Aspire Health * is a company surfaced as a portfolio company of gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Aspire Health was a community-based palliative care provider surfaced as a portfolio
+  company of GV (Google Ventures) and added to the API Evangelist network as a life-sciences stub.
+  The company delivered home- and clinic-based palliative and serious-illness care and was acquired
+  by Anthem (now Elevance Health) in 2018; its aspirehealthcare.com domain today redirects into the
+  Carelon Health / CareMore Health palliative-care service line. Aspire Health is a healthcare
+  services organization, not a technology or API provider: enrichment found no public developer
+  portal, API documentation, OpenAPI specification, SDKs, or /.well-known/ discovery surface. This
+  profile is retained as a network lead with only the identity and domain-security posture that could
+  be verified from public probes.'
 url: https://raw.githubusercontent.com/api-evangelist/aspire-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +28,19 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Anthem (Elevance Health) — now Carelon Health / CareMore
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Healthcare
+- Palliative Care
+- Serious Illness Care
+- Home Health
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aspire-health-domain-security.yml
 - type: Website
-  url: http://aspirehealthcare.com
+  url: https://aspirehealthcare.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
